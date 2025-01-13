@@ -10,10 +10,12 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            background: url("Python.jpg") no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
         }
         header {
-            background-color: #f49506;
+            background-color: rgba(244, 149, 6, 0.8); /* Semi-transparent background */
             color: white;
             padding: 20px;
             text-align: center;
@@ -28,6 +30,7 @@
         nav a {
             text-decoration: none;
             color: #333;
+            background-color: rgba(255, 255, 255, 0.8); /* Light background for better contrast */
             padding: 10px 20px;
             margin: 0 10px;
             border-radius: 5px;
@@ -39,18 +42,18 @@
         }
         section {
             padding: 20px;
-            margin: 20px;
-            background-color: white;
+            margin: 20px auto;
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white for readability */
             border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 900px; /* Limit width for better readability */
         }
         footer {
             text-align: center;
             padding: 10px;
             background-color: #333;
             color: white;
-            position: absolute;
-            bottom: 0;
+            position: relative;
             width: 100%;
         }
     </style>
@@ -74,7 +77,6 @@
             My expertise includes data visualization, statistical analysis, predictive modeling and building interactive dashboards.<br>
             I’ve successfully completed projects for clients in industries such as Telecommunications, E-Commerce.
         </p>
-        
     </section>
 
     <section id="projects">
@@ -84,23 +86,20 @@
             <ol type="A">
                 <li>Collecting Data from 10 separated Excel/CSV sheets.</li>
                 <li>Perform Analysis to get the best set of Frequency for each Radio Cell.</li>
-                <li>reformat the output to be similar to input data needed to be executed on Ericsson System</li>
+                <li>Reformat the output to be similar to input data needed to be executed on Ericsson System.</li>
             </ol>
-
-            
         </div>
         <div>
             <h3>2- Atoll Database (Active\Halted) Status Correction Modifier with zero human intervention (fully automated)</h3>
             <ol type="A">
-                <li>Exports data from Atoll Databse and compare it with Remedy Database to get mismatched status of cells.</li>
-                <li>Apply correct status on Atoll Database.</li>
-                <li>Send automated email with count modification.</li>
+                <li>Exports data from Atoll Database and compares it with Remedy Database to get mismatched statuses of cells.</li>
+                <li>Applies correct statuses to Atoll Database.</li>
+                <li>Sends automated email with count modifications.</li>
             </ol>
         </div>
         <div>
             <h3>3- Multiple Python Scripts that facilitate Daily Work</h3>
         </div>
-        <!-- Add more projects as needed -->
     </section>
 
     <section id="contact">
@@ -108,11 +107,10 @@
         <p><strong>Phone:</strong> +201008900165</p>
         <p><strong>Whatsapp:</strong> +201008900165</p>
         <p><b>Email:</b> <a href="mailto:mhmad.meaad@gmail.com">mhmad.meaad@gmail.com</a></p>
-
     </section>
 
-    <p>&copy; 2025 Meaad</p>
-   
-    
+    <footer>
+        <p>&copy; 2025 Meaad</p>
+    </footer>
 </body>
 </html>
