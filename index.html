@@ -61,7 +61,7 @@
 <body>
     <header>
         <h1>Mohamed Meaad</h1>
-        <h2>Radio Data Analytics Engineer</h2>
+        <h2>Telecom & Network Data Analytics | Data Scientist</h2>
     </header>
 
     <nav>
@@ -73,8 +73,8 @@
     <section id="about">
         <h2>About Me</h2>
         <p>
-<p>I am a Telecom and Radio Data Analytics Engineer with a solid foundation in telecommunications, specializing in RAN performance, troubleshooting, network integration and planning.</p>
-<p>Proficient in Python, SQL, Power BI, and Excel for data extraction, processing, and visualization. Skilled in building supervised and unsupervised machine learning models, applying predictive analytics, regression, clustering, and classification techniques to extract insights, optimize processes, and support data-driven decision-making.</p>
+<p>Proficient in Python,Machine Learning, SQL, Excel and Power BI for data extraction, processing, and visualization.</p>
+<p>Skilled in building supervised and unsupervised machine learning models, applying predictive analytics, regression, clustering, and classification techniques to extract insights, optimize processes, and support data-driven decision-making.</p>
 
 <p><h3>My Technical Skills Include:</h3></p>
 <ol type="A">
@@ -89,28 +89,92 @@
 
     <section id="projects">
         <h2>My Projects</h2>
-        <div>
-            <h3>1- 2G Automatic Frequency Plan Tool</h3>
-            <ol type="A">
-                <li>Collecting Data from 10 separated Excel/CSV sheets.</li>
-                <li>Perform Analysis to get the best set of Frequency for each Radio Cell.</li>
-                <li>Reformat the output to be similar to input data needed to be executed on Ericsson System.</li>
-            </ol>
-        </div>
-        <div>
-            <h3>2- Atoll Database (Active\Halted) Status Correction Modifier</h3>
-            <ol type="A">
-		<li>Executed by Windows Task Scheduler.</li>
-                <li>Exports data from Atoll Database and compares it with Remedy Database to get mismatched statuses of cells.</li>
-                <li>Applies correct statuses to Atoll Database.</li>
-                <li>Sends automated email with count modifications.</li>
-            </ol>
-        </div>
-        <div>
-            <h3>3- Multiple Python Scripts that facilitate Daily Work</h3>
-        </div>
-    </section>
 
+<div>
+  <h3>1- Sales Forecasting Web App</h3>
+  <p>This interactive <strong>Streamlit</strong> application predicts sales trends based on historical data, providing insights for future planning. It allows users to download forecasting sales for any period of days, visualize trends, and generate forecasts.</p>
+  
+  <ol type="A">
+    <li><strong>Data Input:</strong> Upload historical sales data for forecasting.</li>
+    <li><strong>Trend Visualization:</strong> Graphs to visualize historical sales trends.</li>
+    <li><strong>Sales Forecasting:</strong> Predict future sales trends for any selected period.</li>
+    <li><strong>Report Generation:</strong> Downloadable reports with detailed forecast data.</li>
+  </ol>
+  <p style="margin-left: 20px;">
+    <a href="https://sales-forecasting-analysis-predictions.streamlit.app/" target="_blank">Visit the Sales Forecasting Web App</a>
+  </p>
+</div>
+  
+
+<div>
+    <h3>2- Pre-Launch Traffic Predictor</h3>
+    <ol type="A">
+        <li><strong>Data Input:</strong> Ingests planned site parameters (location, Height, etc) via Dataset/CSV.</li>
+        <li><strong>Load Forecast:</strong> Applies historical analogs and a predictive model to forecast voice and data load before the site goes live.</li>
+        <li><strong>Priority Flagging:</strong> Marks sites expected to exceed capacity thresholds as “High Priority” for rollout decisions.</li>
+        <li><strong>Report Generation:</strong> Outputs a concise summary report in Excel for planning and management teams.</li>
+    </ol>
+</div>
+
+<div>
+    <h3>3- Height Impact Traffic Simulator</h3>
+    <ol type="A">
+        <li><strong>Scenario Setup:</strong> Accepts current site details plus alternate tower heights as inputs.</li>
+        <li><strong>Load Forecast:</strong> Predicts voice and data load for each height scenario.</li>
+        <li><strong>Report Generation:</strong> Outputs a concise summary report in Excel for planning and management teams.</li>
+    </ol>
+</div>
+
+<div>
+    <h3>4- LTE Bandwidth Traffic Forecaster</h3>
+    <ol type="A">
+        <li><strong>Bandwidth Selection:</strong> Lets you choose LTE carrier bandwidth (e.g., 5/10/15/20 MHz).</li>
+        <li><strong>Load Forecast:</strong> Predicts voice and data load changes tied to each bandwidth option.</li>
+        <li><strong>Report Generation:</strong> Outputs a concise summary report in Excel for planning and management teams.</li>
+    </ol>
+</div>
+
+<div>
+    <h3>5- Technology Upgrade Traffic Predictor</h3>
+    <ol type="A">
+        <li><strong>Tech Configuration:</strong> Selects new radio technologies (e.g., adding 3G, 4G, or 5G) to the site profile.</li>
+        <li><strong>Load Forecast:</strong> Predicts voice and data load when the chosen technology is deployed.</li>
+        <li><strong>Report Generation:</strong> Outputs a concise summary report in Excel for planning and management teams.</li>
+    </ol>
+</div>
+
+
+<div>
+    <h3>6-GSM Network Channel Allocator</h3>
+    <ol type="A">
+        <li><strong>Collects &amp; Unifies Data:</strong> Reads technical parameters from ten Excel/CSV files and merges them into one dataset.</li>
+        <li><strong>Optimizes Assignments:</strong> Runs a frequency-planning algorithm that considers each cell and its neighbors to minimize interference while maximizing coverage and capacity.</li>
+        <li><strong>Produces Ready-to-Use Output:</strong> Converts results into the exact file layout Ericsson’s system requires, so engineers can upload them directly.</li>
+    </ol>
+</div>
+<div>
+    <h3>7- Atoll Database Status Sync Tool</h3>
+    <ol type="A">
+        <li><strong>Automated Scheduling:</strong> Runs on a set schedule via Windows Task Scheduler—no manual start needed.</li>
+        <li><strong>Cross-System Comparison:</strong> Pulls cell status data from the network planning database and from the support ticket system, then flags any differences.</li>
+        <li><strong>Status Alignment:</strong> Updates the planning database so each cell’s “active” or “halted” status matches the support system’s record.</li>
+        <li><strong>Email Summary:</strong> Sends an automatic report showing how many statuses were corrected.</li>
+    </ol>
+</div>
+<div>
+    <h3>8- Coverage Overlap & Sector Order Validator</h3>
+    <ol type="A">
+        <li><strong>Automated Scheduling:</strong> Runs on a set schedule via Windows Task Scheduler—no manual start needed.</li>
+        <li><strong>Overlap Detection:</strong> Scans the network database to identify cells whose coverage areas overlap unexpectedly.</li>
+        <li><strong>Sequence Verification:</strong> Ensures each cell’s sectors are listed in the correct numerical order.</li>
+        <li><strong>Email Summary:</strong> Sends an automatic report detailing any detected overlaps or ordering errors.</li>
+    </ol>
+</div>
+        <div>
+            <h3>9- Multiple Python Scripts that facilitate Daily Work and analysis for monitoring and decision making</h3>
+        </div>
+
+ </section>
     <section id="contact">
         <h2>Contact Me</h2>
         <p><strong>Phone:</strong> +201008900165</p>
